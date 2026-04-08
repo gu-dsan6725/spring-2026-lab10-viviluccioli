@@ -1,0 +1,37 @@
+[
+    {
+        "input": "What time is it right now in Tokyo?",
+        "expected_output": "The current local time in Tokyo, along with the timezone name (JST) and UTC offset (+09:00).",
+        "expected_tools": ["get_current_time"],
+        "category": "time",
+        "difficulty": "easy"
+    },
+    {
+        "input": "What is the current time in London and what is the weather like there?",
+        "expected_output": "The current local time in London with timezone info, plus current London weather including temperature and conditions.",
+        "expected_tools": ["get_current_time", "get_weather"],
+        "category": "multi_tool",
+        "difficulty": "medium"
+    },
+    {
+        "input": "How many Japanese Yen will I get for 500 US Dollars?",
+        "expected_output": "The current USD to JPY exchange rate and the converted amount showing how many JPY 500 USD is worth.",
+        "expected_tools": ["get_exchange_rate"],
+        "category": "currency",
+        "difficulty": "easy"
+    },
+    {
+        "input": "I want to convert 1000 Euros to British Pounds. What is the current exchange rate?",
+        "expected_output": "The current EUR to GBP exchange rate and the converted amount showing the value of 1000 EUR in GBP.",
+        "expected_tools": ["get_exchange_rate"],
+        "category": "currency",
+        "difficulty": "easy"
+    },
+    {
+        "input": "I am planning a business trip from New York to Tokyo. How long is the flight route by driving to JFK first, what is the current time in Tokyo, what is the weather there, what is the USD to JPY exchange rate, and what are the top business hotels in Shinjuku?",
+        "expected_output": "Driving directions from Manhattan to JFK Airport with distance and time, the current local time in Tokyo with timezone info, current Tokyo weather with temperature, the USD to JPY exchange rate, and a list of recommended business hotels in the Shinjuku area of Tokyo.",
+        "expected_tools": ["get_directions", "get_current_time", "get_weather", "get_exchange_rate", "duckduckgo_search"],
+        "category": "multi_tool",
+        "difficulty": "hard"
+    }
+]
